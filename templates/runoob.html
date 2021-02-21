@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        wx-视频相关性检索
+    </title>
+
+</head>
+<body>
+    {% load static %}
+    <img src="{% static "images/bilibili-backTop.jpg" %}" alt = "bilibili-topBack">
+    <!-- 引用图片的方法，直接使用大括号百分号的公式形式添加对应的static -->
+    <p>感谢您的访问：{{ time|date:"Y-m-d H:i:s" }}</p>
+
+    <!--  限制器的冒号是要和变量相连的，注释的双减号要和波浪号相连  -->
+    <p>{{ views_list |default:"wx-wx-666"  }}</p>
+    <p>{{ views_list.0 |default:"wx-wx-666" }}</p>
+    <p>
+        {{ runoob|safe }}
+    </p>
+
+</body>
+
+
+</html>
+
